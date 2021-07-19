@@ -13,34 +13,40 @@
 
     ii. [E] Given a vector $u$, find vector $v$ of unit length such that the dot product of $u$ and $v$ is maximum.
 
-    Answer
+    The maximum dot product is achieved when the two vectors are going in the same direction. Since $v$ is of unit length, the answer is $v = [1,1,1,...]$.
 
 
 2. Outer product
 
     i. [E] Given two vectors $a=[3,2,1]$ and $b=[-1,0,1]$. Calculate the outer product $a^Tb$?
 
-    Answer
+    $$
+    \begin{bmatrix}
+        -3 & 0 & 3 \\
+        -2 & 0 & -2 \\
+        1 & 0 & -1
+    \end{bmatrix}
+    $$
 
 
     ii. [M] Give an example of how the outer product can be useful in ML.
 
-    Answer
+    Incomplete Answer: Error back propagation in multi-layer perceptrons.
 
 
 3. [E] What does it mean for two vectors to be linearly independent?
 
-Answer
+Two vectors $v1, v2$ are linearly independent if for any scalars $c1, c2$, $c1*v1 + c2*v2 != 0$.
 
 
 4. [M] Given two sets of vectors $A=a_1,a_2,a_3,...,a_n$ and $B=b_1,b_2,b_3,...,b_m$. How do you check that they share the same basis?
 
-Answer
+Potential (sharing a basis?) incomplete answer: The two vectors would *form* a basis if they are linearly independent with each other. This can be checked by taking the dot product between the two and verifying that it does not equal 0.
 
 
 5. [M] Given $n$ vectors, each of $d$ dimensions. What is their dimensionality span?
 
-Answer
+You can treat the vectors as the rows of a matrix. The dimensionality span would be given by the rank of this matrix. The rank is equal to the number of linearly independent rows.
 
 
 6. Norms and metrics
