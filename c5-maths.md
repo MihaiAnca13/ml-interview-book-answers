@@ -36,7 +36,7 @@
 
 3. [E] What does it mean for two vectors to be linearly independent?
 
-Two vectors $v1, v2$ are linearly independent if for any scalars $c1, c2$, $c1*v1 + c2*v2 != 0$.
+Two vectors $v1, v2$ are linearly independent if for any scalars $c1, c2$, the following expression is true: $c1*v1 + c2*v2 != 0$.
 
 
 4. [M] Given two sets of vectors $A=a_1,a_2,a_3,...,a_n$ and $B=b_1,b_2,b_3,...,b_m$. How do you check that they share the same basis?
@@ -53,12 +53,16 @@ You can treat the vectors as the rows of a matrix. The dimensionality span would
 
     i. [E] What's a norm? What is $L_0, L_1, L_2, L_{norm}$?
 
-    Answer
+    The norm represents the size of a vector. The $L_0$ norm counts the total number of nonzero elements of a vector. The $L_1$ norm is calculated as the sum of the absolute values of the vector. The $L_2$ norm is calculated as the square root of the sum of the squared vector values. The $L_{infinity}$ norm gives the largest absolute value among each element of a vector. Formula: $$ L_{norm} = (\sum_{i=1}^k |X_i|^n)^\frac{1}{n} $$
 
 
     ii. [M] How do norm and metric differ? Given a norm, make a metric. Given a metric, can we make a norm?
 
-    Answer
+    The metric gives the distance between two points. In other words, the metric is a function of two variables and a norm is a function of one variable. 
+    If, for example, we are given the $L_2$ norm as $\sqrt{x_1^2+...+x_n^2}$, then we can define the distance from x to y as $||x-y||_2$. On the other side, if you define the $L_2$ distance between $x$ and $y$ as $\sqrt{(x_1-y_1)^2+...+(x_n-y_n)^2}$, then you can define the norm as the distance between $x$ and the origin.
+    In order to make a norm from a metric, the metric must have the following two properties: 
+    - translation invariance: $d(u+w, v+w)=d(u,v)$
+    - scaling: $d(tu,tv)=|t|d(u,v)$
 
 
 ### Matrices
