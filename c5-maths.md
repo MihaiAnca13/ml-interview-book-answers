@@ -69,27 +69,27 @@ You can treat the vectors as the rows of a matrix. The dimensionality span would
 
 1. [E] Why do we say that matrices are linear transformations?
 
-Answer
+A transformation is just a function that maps a set of inputs to a set of outputs. A linear transformation must also satisfy the following property: $T(x+y)=T(x)+T(y)$. A matrix is a linear transformation because the transformation applied to a vector within the same domain as the matrix, is the same as multiplying that vector by the matrix.
 
 
 2. [E] What’s the inverse of a matrix? Do all matrices have an inverse? Is the inverse of a matrix always unique?
 
-Answer
+Formula: $A^{-1}=\frac{1}{|A|}AdjA$. The inverse of matrix exists only if the determinant of the matrix is a non-zero value and the matrix is square. The inverse of a square matrix if exists, is unique.
 
 
 3. [E] What does the determinant of a matrix represent?
 
-Answer
+The determinant of a matrix reflects how the linear transformation associated with the matrix can scale or reflect objects.
 
 
 4. [E] What happens to the determinant of a matrix if we multiply one of its rows by a scalar $t \times R$?
 
-Answer
+When multiplying one row by a scalar, the resulting determinant is also scaled by the same value.
 
 
 5. [M] A $4 \times 4$ matrix has four eigenvalues $3, 3, 2, -1$. What can we say about the trace and the determinant of this matrix?
 
-Answer
+The sum of eigenvectors is equal to the trace, while their product is equal to the determinant. Therefore, the trace is 7 and the determinant is -18.
 
 
 6. [M] Given the following matrix:<br>
@@ -105,7 +105,7 @@ Answer
 
     **Hint**: rely on a property of this matrix to determine its determinant.
 
-Answer
+The 3rd column is linearly dependant with the first column. This means it's determinant is 0.
 
 
 7. [M] What’s the difference between the covariance matrix $A^TA$ and the Gram matrix $AA^T$?
