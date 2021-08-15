@@ -117,34 +117,34 @@ Answer
 
     i. [M] Find $x$ such that: $Ax = b$.
 
-    Answer
+    The value of $x$ depends on the relashionship between $n$, $m$ and the rank $r$ of $A$. If $A$ has full rank, then $x$ can be calculated with $x = A^{-1}b$. If $r=n<m$, then we can use the left inverse $(A^TA)^{-1}A^T$. If $r=m<n$, then we can use the right inverse $A^T(AA^T)^{-1}$. In the last case, when $r<n and r<m$, we need to use the pseudoinverse $A^+$.
 
 
     ii. [E] When does this have a unique solution?
 
-    Answer
+    When the rank of $A$ is equal to $n$ and the rows of the matrix are independent.
 
 
     iii. [M] Why is it when A has more columns than rows, $Ax = b$ has multiple solutions?
 
-    Answer
+    In this case, the column's null space is not empty. This means there exists $z$ such that $Az=0$. Then, the following is valid $A(x+tz)=Ax+tAz=b+t0=b$, for any $t\in\mathbb{R}$.
 
 
     iv. [M] Given a matrix A with no inverse. How would you solve the equation $Ax = b$? What is the pseudoinverse and how to calculate it?
 
-    Answer
+    Answer is similar to question i. The pseudoinverse is the closest matrix to $A^{-1}$ and it represents the projection of $A$ onto the column or row space.
 
 
 9. Derivative is the backbone of gradient descent.
 
     1. [E] What does derivative represent?
 
-    Answer
+    The rate of change of a function.
 
 
     1. [M] What’s the difference between derivative, gradient, and Jacobian?
 
-    Answer
+    The derivative is the rate of change of a function with respect to a single variable. The gradient is the colleciton of all partial derivates of a function with respect to each of its variables. The Jacobian matrix sums up all the changes of each component of a vector along each coordinate axis, respectively. Jacobian matrices are used to transform the infinitesimal vectors from one coordinate system to another.
 
 
 10. [H] Say we have the weights $w \in R^{d \times m}$ and a mini-batch $x$ of $n$ elements, each element is of the shape $1 \times d$ so that $x \in R^{n \times d}$. We have the output $y = f(x; w) = xw$. What’s the dimension of the Jacobian $\frac{\delta y}{\delta x}$?
